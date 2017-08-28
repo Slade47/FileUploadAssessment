@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<script type="text/javascript"
+        src="webjars/jquery/2.2.4/jquery.min.js"></script>
+<script type="text/javascript" src="js/ajax_upload.js"></script>
+
+<body>
+
+<h1>Please Upload Your File</h1>
+
+<form method="POST" enctype="multipart/form-data" id="upload">
+    <input type="file" name="files"/><br/>
+     <p>File Description: <input type="text" name="fileDescription" placeholder="Optional"/><br/></p><br/>
+    <input type="submit" value="Upload" id="uploadButton"/>
+</form>
+
+<h1>Upload Records</h1>
+<pre>
+   <p><span id="result"></span></p>
+</pre>
+
+</body>
+</html>
